@@ -1,34 +1,24 @@
 import React, {Fragment} from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
-// import { getFetchGifs } from '../helpers/getGifs';
 import GiftGridItem from './GiftGridItem';
 
 const GiftGrid = ({category}) => {
 
-    const {loading}=useFetchGifs();
-    
-    console.log(data, loading)
-    /*   const [images, setImages] = useState([])
-    useEffect(()=>{
-        getFetchGifs(category)
-            .then(setImages);
-    }, [category]) */
-    
+    const {data:images, loading}=useFetchGifs(category);
     
     return ( 
         <Fragment>
-            <li>{category}</li>
-            {loading? 'Cargando...':'Data Cargada'}
-          { /*  <div className="card-grid">
+            <li className="card animate__animated animate__pulse">{category}</li>
+            {loading&&<p className="card animate__animated animate__flash">Loading ...</p>}
+          <div className="card-grid">
                     {
                         images.map(img=>(
                                 <GiftGridItem 
                                 key={img.id}
-                            // img={img} />
                             {...img}/>
                         ))
                     }
-            </div> */}
+            </div>
         </Fragment>
      );
 }
