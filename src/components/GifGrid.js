@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import GiftGridItem from './GiftGridItem';
+import PropTypes from 'prop-types'
 
 const GiftGrid = ({category}) => {
 
@@ -21,6 +22,9 @@ const GiftGrid = ({category}) => {
             </div>
         </Fragment>
      );
+}
+GiftGrid.propTypes={
+    category: PropTypes.string.isRequired
 }
  
 export default GiftGrid;

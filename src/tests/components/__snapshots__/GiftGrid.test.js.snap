@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de el componente <GiftGrid></GiftGrid> should show items when he charges image useFetchGifs 1`] = `
+<Fragment>
+  <li
+    className="card animate__animated animate__pulse"
+  >
+    One Punch
+  </li>
+  <div
+    className="card-grid"
+  >
+    <GiftGridItem
+      id="ABC"
+      key="ABC"
+      title="ABC Title"
+      url="https://google.com"
+    />
+    <GiftGridItem
+      id="123"
+      key="123"
+      title="ABC Title"
+      url="https://google.com"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas de el componente <GiftGrid></GiftGrid> should show the snapshot of the <GiftGrid></GiftGrid> 1`] = `
+<Fragment>
+  <li
+    className="card animate__animated animate__pulse"
+  >
+    One Punch
+  </li>
+  <p
+    className="card animate__animated animate__flash"
+  >
+    Loading ...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
