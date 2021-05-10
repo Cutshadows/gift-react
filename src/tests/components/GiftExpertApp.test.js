@@ -12,6 +12,7 @@ describe('Llevaremos a cabo las pruebas de <GiftExpertApp />', () => {
         expect(wrapper).toMatchSnapshot();
     })
 
+    // eslint-disable-next-line
     test('should show a list of categories ', () => {
         const categories=['One Punch', 'Dragon Ball'];
         const wrapper=shallow(<GiftExpertApp defaultCategories={categories}/>);

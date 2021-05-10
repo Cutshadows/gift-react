@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import '@testing-library/jest-dom';
 import {shallow} from 'enzyme';
 import GiftGrid from '../../components/GifGrid';

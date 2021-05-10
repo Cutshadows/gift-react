@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import '@testing-library/jest-dom';
 import { useFetchGifs } from '../../hooks/useFetchGifs';
 import { renderHook } from '@testing-library/react-hooks';
