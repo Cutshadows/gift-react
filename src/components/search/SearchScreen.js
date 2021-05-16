@@ -18,7 +18,7 @@ const SearchScreen = ({history}) => {
 
     const handleSearch=(e)=>{
         e.preventDefault();
-        history.push(`?q=${inputsearch}`)
+        history.push(`?q=${inputsearch}`);
     }
     return ( 
         <div>

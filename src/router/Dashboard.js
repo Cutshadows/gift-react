@@ -11,6 +11,7 @@ import SearchScreen from '../components/search/SearchScreen';
 import ScreenMarvel from '../components/marvel/Marvel';
 import ScreenDC from '../components/dc/ScreenDC';
 import HeroeScreen from '../components/heroes/HeroeScreen';
+
 export const Dashboard=()=>{
     return(
       <>
