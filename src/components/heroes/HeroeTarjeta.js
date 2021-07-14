@@ -1,12 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+const heroeImg=require.context('../../../public/assets/heroes', true);
+// import heroeName from '../../../public/assets/heroes/';
 const HeroeTarjeta = ({id, superhero, alter_ego, first_appearance, characters}) => {
     return ( 
         <div className="card mb-3" style={{maxWidth:540}}>
             <div className="row g-0">
                 <div className="col-md-4 col-mb-8">
-                    <img src={`./assets/heroes/${id}.jpg`} className="card-img mt-3" alt={superhero} />
+                    <img 
+                    src={heroeImg(`./${id}.jpg`).default}
+                    // src={`./assets/heroes/${id}.jpg`} 
+                    className="card-img mt-3" alt={superhero} />
+                    {/* src={`./assets/heroes/${id}.jpg`}  */}
+
                 </div>
                 <div className="col-md-8 col-mb-4">
                     <div className="card-body">
